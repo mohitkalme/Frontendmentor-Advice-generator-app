@@ -10,7 +10,7 @@ const fetchAdviceFunc = async () => {
   const API_ENDPOINT = `https://api.adviceslip.com/advice`;
   const res = await fetch(API_ENDPOINT);
   const data = await res.json();
-  console.log(data);
+  // console.log(data);
   id.textContent = data.slip.id;
   adviceText.textContent = data.slip.advice;
 };
